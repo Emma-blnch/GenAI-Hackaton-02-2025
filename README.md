@@ -12,7 +12,7 @@ With this project, I developed my:
 - [ ] Organization (having only 2 days to complete a big task).
 - [ ] Oral skills (I presented our project in front of the jury in just 5 minutes).
 
-As fot the technical skills I developed:
+As for the technical skills I developed:
 - [ ] How to use API
 - [ ] How to use AWS services (bedrock, lambda...)
 - [ ] Python and JS
