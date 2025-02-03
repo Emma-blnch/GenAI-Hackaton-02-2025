@@ -38,7 +38,7 @@ When a PDF is uploaded we store it in a S3 bucket, call an API linked to a lambd
 ![Enedis Analyzer-single](https://github.com/user-attachments/assets/1f3e0665-7030-4ad9-b315-41d062c6725f)
 
 ## 👀 **User flow**
-It was really important for me to focus on the user experience an dot make it smooth. The first page the user arrives to when opening the website is the data visualisation because I felt like that was what the company was missing the most: a clear representation of their media image in stats sorted by theme and region.
+It was really important for us to focus on the user experience and to make it smooth. The first page the user arrives to when opening the website is the data visualisation because we felt like that was what the company was missing the most: a clear representation of their media image in stats sorted by theme and region.
 
 The other pages are dedicated to communicating articles to the AI for analyzing.
 
