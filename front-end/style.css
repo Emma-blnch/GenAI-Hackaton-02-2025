@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "Public-sans";
+    src: url(assets/fonts/Public-sans/PublicSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+/* Réglages généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: "Public-sans", sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
+}
+
+header img {
+    width: 90px;
+    position: absolute;
+    left: 2%;
+    top: 30%;
+}
+
+header h1 {
+    font-family: "Montserrat-Bold";
+    color: #97cb3e;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Menu Burger */
+.burger-menu {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+.burger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #1422dc;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Menu déroulant */
+.dropdown-menu {
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    border: 1px solid rgba(84, 84, 84, 0.254);
+    border-radius: 15px;
+    background: #1422dc;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 9;
+}
+
+.dropdown-menu button {
+    background: #1422dc;
+    text-transform: uppercase;
+    font-family: "Public-sans";
+    color: white;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu button:hover {
+    color: black;
+    background: #1422dc;
+}
+
+/* Bloc Data */
+.dashboard {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dashboard h3 {
+    color: black;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+}
+
+.charts-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.dashboard canvas {
+    max-width: 600px;
+    margin: 40px;
+}
+
+/* Layout principal */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    flex: 1;
+}
+
+/* What is analyzed */
+.what-is-analyzed {
+    background-color: #1422dc;
+    padding: 10px 20px;
+    color: white;
+}
+
+.what-is-analyzed button {
+    color: white;
+    background: none;
+    border-radius: 40px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.what-is-analyzed button:hover,
+.what-is-analyzed button.active {
+    background: white;
+    color: black;
+}
+
+/* Section "Comment ça marche" */
+.how-it-works {
+    padding: 10px 20px;
+    margin: 50px;
+   /* text-align: left;*/
+}
+
+.how-it-works h3 {
+    font-size: 1.2rem;
+    color: #97cb3e;
+    margin-bottom: 5px;
+    font-family: "Montserrat-Bold";
+    text-transform: uppercase;
+}
+
+.how-it-works ul {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.how-it-works li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    line-height: 2rem;
+    color: black;
+}
+
+/* Bloc Upload */
+.container {
+    background: #1422dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    max-width: 400px;
+    margin-right: 50px;
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+}
+
+
+.file-label {
+    display: inline-block;
+    background: #DDA15E;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.file-label:hover {
+    background: #BC6C25;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    background: #97cb3e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: black;
+}
+
+/* Bloc Chat IA */
+.ai-chatting {
+    background: #1422dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ai-chatting h2 {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+}
+
+.ai-chatting button {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    resize: vertical;
+    margin-bottom: 10px;
+    font-family: "Public-sans";
+    font-size: 0.9rem;
+    color: #DDA15E;
+    text-align: center;
+}
+
+textarea::placeholder {
+    color: black;
+    opacity: 0.8;
+    font-style: italic;
+    text-align: center;
+}
+
+.response-box {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+    min-height: 50px;
+    margin-top: 10px;
+    text-align: left;
+    color: #DDA15E;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background: #1422dc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat-Bold";
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header img {
+        display: none;
+    }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container, .ai-chatting {
+        width: 90%;
+    }
+    hr {
+        display: none;
+    }
+}
