@@ -12,12 +12,22 @@ With this project, I developed my:
 - [ ] Organization (having only 2 days to complete a big task).
 - [ ] Oral skills (I presented our project in front of the jury in just 5 minutes).
 
-## ⚙️ **Team**
+As fot the technical skills I developed:
+- [ ] How to use API
+- [ ] How to use AWS services (bedrock, lambda...)
+- [ ] Python and JS
+
+## 🤝 **Team**
 The team was made up of 4 students from 42, Telecom Paris and CentralSupélec.
 
 It was really interesting to work with students from other school because they have other specialties (such as mathematics) and a different approach to things.
 
-# Architecture
+## ⚙️ **How the work was split**
+I focused mainly on the front-end (HTML, CSS and the JS script).
+
+My teammates focused on prompting the AI, building the python functions and the AWS workflow.
+
+## 🏠 **Architecture**
 ![architechture](https://github.com/user-attachments/assets/82896281-f5ff-4c3d-b485-84ea8afb0c21)
 
 As shown in the achitechture, the solution is a web application, screenshots of which are shown below.
@@ -27,9 +37,9 @@ When a PDF is uploaded we store it in a S3 bucket, call an API linked to a lambd
 
 ![Enedis Analyzer-single](https://github.com/user-attachments/assets/1f3e0665-7030-4ad9-b315-41d062c6725f)
 
-## **User flow**
+## 👀 **User flow**
 It was really important for me to focus on the user experience an dot make it smooth. The first page the user arrives to when opening the website is the data visualisation because I felt like that was what the company was missing the most: a clear representation of their media image in stats sorted by theme and region.
 
-The other pages are dedicated to communicating articles to the IA for analyzing.
+The other pages are dedicated to communicating articles to the AI for analyzing.
 
 Overall the website was kept simple and clear, so the user can go straight to the point.
