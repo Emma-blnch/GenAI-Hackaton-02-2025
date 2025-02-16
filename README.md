@@ -15,7 +15,11 @@ With this project, I developed my:
 As for the technical skills I developed:
 - [ ] How to use API
 - [ ] How to use AWS services (bedrock, lambda...)
-- [ ] Python and JS
+
+## ⚙️ **Technologies**
+- Python
+- JavaScript
+- AWS services
 
 ## 🤝 **Team**
 The team was made up of 4 students from 42, Telecom Paris and CentralSupélec.
